@@ -90,7 +90,14 @@ public class _01_StringMethods {
 
 	// Return the number of times String substring appears in String s
 	public static int substringCount(String s, String substring) {
-		return 0;
+		int occurances = 0;
+		for (int i = 0; i < substring.length(); i++) {
+			if (substring.contains(s)) {
+				occurances += 1;
+			}
+		}
+		
+		return occurances;
 	}
 
 	// Call Utilities.encrypt at the bottom of this file to encrypt String s

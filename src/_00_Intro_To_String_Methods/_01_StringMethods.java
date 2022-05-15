@@ -142,7 +142,7 @@ public class _01_StringMethods {
 		s = s.replaceAll(" ", "");
 		s = s.replaceAll(",", "");
 		s = s.replaceAll(":", "");
-		s = s.replaceAll(".", "");
+		s = s.replaceAll("\\.", "");
 		s = s.replaceAll("-", "");
 		s = s.replaceAll("\\?", "");
 		
@@ -152,8 +152,7 @@ public class _01_StringMethods {
 		for (int i = s.length()-1; i >= 0; i--) {
 			reversed += s.charAt(i);						
 		}
-	
-		
+
 		return s.equals(reversed);
 	}
 }

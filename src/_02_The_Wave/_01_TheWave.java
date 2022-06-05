@@ -20,9 +20,15 @@ public class _01_TheWave {
      */
     
     public static ArrayList<String> wave(String str) {
-        for(int i = 0; i < str.length(); i++) {
-        	if (i)
+    	ArrayList<String> array = new ArrayList();
+        for(int i = 0; i < str.length(); i++) { 
+        	if (str.charAt(i) != ' ') {
+        	Character uppercase1 = Character.toUpperCase(str.charAt(i));        	
+        StringBuilder builder = new StringBuilder(str);
+        	builder.replace(i, i+1, uppercase1.toString());
+        	array.add(str);
         }
-        return null;
+        }
+        return array;
     }
 }

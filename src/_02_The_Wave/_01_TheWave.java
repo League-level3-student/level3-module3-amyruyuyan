@@ -26,9 +26,9 @@ public class _01_TheWave {
         	Character uppercase1 = Character.toUpperCase(str.charAt(i));        	
         StringBuilder builder = new StringBuilder(str);
         	builder.replace(i, i+1, uppercase1.toString());
-        	array.add(str);
+        	array.add(builder.toString());
         }
         }
         return array;
-    }
+    } 
 }
